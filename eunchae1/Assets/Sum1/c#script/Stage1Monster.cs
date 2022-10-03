@@ -53,6 +53,8 @@ public class Stage1Monster : MonoBehaviour
     {
         if (heart == 0)
         {
+            //move = false; //속도 없애기
+            //Invoke("Destroy", 0.4f);
             Destroy(gameObject);
             GameObject.Find("Stage").GetComponent<Stage>().Remain();
         }
